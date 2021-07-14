@@ -1,0 +1,393 @@
+/*variables*/
+:root {
+    --Strongcyan: hsl(171, 66%, 44%);
+    --lightblue: hsl(233, 100%, 69%);
+    --darkgrayblue: hsl(210, 10%, 33%);
+    --grayblue: hsl(201, 11%, 66%);
+}
+
+/*reset*/
+body,p,a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+ /*base styles*/
+ body {
+    overflow-x: hidden;
+    font-family: 'Bai jamjuree reg',  sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: absolute;
+    width: 100vw;
+}
+
+ /*fonts*/
+ @font-face {
+    font-family: 'Bai jamjuree reg';
+    src: url(BaiJamjuree-Regular.ttf);
+
+    font-family: 'Bai jamjuree bold';
+    src:url(BaiJamjuree-SemiBold.ttf);
+}
+
+h1 {
+    font-family: 'Bai jamjuree bold', sans-serif;
+    font-size: 1.8em;
+    color: var(--darkgrayblue);
+    
+}
+h2 {
+    font-family: 'Bai jamjuree bold', sans-serif;
+    font-size: 1.5em;
+    color: var(--darkgrayblue);
+}
+h3 {
+    font-family: 'Bai jamjuree bold', sans-serif;
+    font-size: 1.2em;
+    color: var(--darkgrayblue);
+}
+p {
+    font-size: 1em;
+    color: var(--grayblue);
+}
+
+/*buttons*/
+.buttonOS {
+    background: var(--Strongcyan);
+    border: 2px solid transparent;
+    padding: 12px 70px;
+    margin: 40px auto 15px auto;
+    border-radius: 20px;
+    display: block;
+    color: white;
+}
+.buttonOS:hover {
+    cursor: grab;
+
+}
+
+
+.buttonMac {
+    background: var(--lightblue);
+    border: 2px solid transparent;
+    padding: 12px 70px;
+    border-radius: 20px;
+    display: inline-block;
+    color: white;
+}
+.buttonMac:hover {
+    cursor: grab;
+
+}
+
+/*mobile styles*/
+
+
+
+.logo {
+    background-image: url(bg-header-mobile.png);
+    background-size: cover;
+    width: 100%;
+}
+.logoimg {
+    margin: 0 auto;
+    display: block;
+    padding: 15% 0;
+}
+
+.intro {
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.intro p {
+    line-height: 25px;
+    padding: 0 6%;
+}
+
+
+.features {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.features p {
+    line-height: 25px;
+    padding: 0 6%;
+}
+.features h3 {
+    position: relative;
+    bottom: -20px;
+}
+.mac {
+    size: 400px 300px;
+    margin: 70px auto;
+}
+.mac img {
+    width: 82%;
+    height: 240px;
+}
+
+.access {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.access p {
+    line-height: 25px;
+    padding: 0 6%;
+}
+.device {
+    size: 400px 300px;
+    margin: 70px auto 0 auto;
+}
+.device img {
+    width: 90%;
+    height: 200px;
+}
+
+.work {
+        text-align: center;
+        width: 85%;
+        margin: 70px auto;
+}
+.work p {
+        line-height: 25px;
+        padding: 0 6%;
+}
+
+.sides {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.sides p {
+    line-height: 25px;
+    padding: 0 6%;
+}
+
+.create {
+    margin: 50px auto;
+}
+
+.plain {
+    margin: 50px auto;
+}
+
+.sneak {
+    margin: 50px auto;
+}
+
+
+
+
+.logos {
+    margin: 100px auto;
+    line-height: 100px;
+    text-align: center;
+    position: relative;
+    left: -20px;
+}
+.clip {
+    margin: 0 auto;line-height: 30px;;
+    text-align: center;
+    padding: 0 22.5%;
+}
+
+.foot {
+    text-align: center;
+    background-color: var(--grayblue);
+    width: 100%;
+    margin: 150px auto 0 auto;
+    padding: 50px 0;
+    line-height: 40px;
+}
+.foot img {
+    width: 50px;
+    height: 50px;
+}
+.foot ul {
+    position: relative;
+    left: -20px;
+}
+
+
+.social img {
+    width: 20px;
+    height: 20px;
+    margin: auto 10px;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        margin: 0 auto;
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+
+
+
+    @media screen and (min-width: 620px) {
+        body {
+            font-size: 18px;
+        }
+        .logo {
+            background-image: url(bg-header-desktop.png);
+            padding: 0;
+        }
+        .logoimg {
+            margin: 0 auto;
+            display: block;
+            padding: 5% 0;
+        }
+        .buttonOS {
+            display: inline-block;
+            padding: 12px 30px;
+        }
+        .buttonMac {
+            padding: 12px 30px;
+        }
+        .intro p {
+            padding: 0 22%;
+        }
+        .desk {
+            display: flex;
+            flex-direction: row;
+        }
+        .features {
+            width: 100%;
+        }
+        .features p {
+            padding: 0 24%;
+        }
+        .info {
+            text-align: left;
+            padding-top: 90px;
+        }
+        .info h3 {
+            padding-bottom: 13px;
+        }
+        .info p {
+            width: 62%;
+            padding: 0;
+            font-size: 0.8em;
+        }
+        
+        .mac img {
+            width: 90%;
+            height: 100%;
+            position: relative;
+            Left: -8%;
+        }
+
+        .access {
+            padding-top: 60px;
+        }
+        .access p {
+            padding: 0 20%;
+        }
+        .device {
+            margin: 70px auto 0 auto;
+        }
+        .device img {
+            width: 80%;
+            height: 100%;
+        }
+
+        .sides {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 100px;
+            gap: 20px;
+            
+        }
+
+        .sides p {
+            line-height: 25px;
+            padding: 0;
+            font-size: 0.8em;
+        }
+
+        .create {
+            margin: 40px auto;
+            width: 33%;
+        }
+        
+        .plain {
+            margin: 50px auto;
+            width: 33%;
+        }
+        
+        .sneak {
+            margin: 50px auto;
+            width: 33%;
+        }
+        
+        .logos {
+            margin: 100px auto;
+            display: inline;
+        }
+        .logos ul {
+            display: inline;
+        }
+        .logos ul li {
+            display: inline;
+            padding: 0 40px;
+        }
+
+        .foot {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            background-color: var(--grayblue);
+            width: 100%;
+            margin-top: 150px;
+            padding: 50px 0;
+            line-height: 40px;
+            justify-content: space-evenly;
+        }
+        .foot img {
+            width: 70px;
+            height: 70px;
+            padding: 0 30px;
+        }
+        .foot ul {
+            position: unset;
+            padding: 0;
+            text-align: end;
+            width: 300px;
+        }
+        .foot ul li {
+            display: inline;
+            padding: 0 20px;
+        }
+        
+        
+        .social img {
+            width: 20px;
+            height: 20px;
+            margin: auto 10px;
+            padding: 0;
+            justify-items: flex-end;
+        }
+    }
